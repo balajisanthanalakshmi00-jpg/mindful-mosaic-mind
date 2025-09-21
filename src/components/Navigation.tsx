@@ -9,7 +9,9 @@ import {
   BookOpen, 
   Phone,
   Menu,
-  X
+  X,
+  Sparkles,
+  Flower
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -20,6 +22,8 @@ const navigationItems = [
   { path: "/creative", label: "Creative Space", icon: Palette },
   { path: "/chat", label: "Chat Friend", icon: MessageCircle },
   { path: "/games", label: "Games", icon: Gamepad2 },
+  { path: "/relax-games", label: "Relax", icon: Flower },
+  { path: "/affirmations", label: "Affirmations", icon: Sparkles },
   { path: "/journal", label: "Journal", icon: BookOpen },
   { path: "/emergency", label: "Emergency", icon: Phone, isEmergency: true },
 ];

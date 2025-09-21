@@ -15,17 +15,19 @@ interface Message {
 
 const welcomeMessage = "Hi there! I'm here to help and support you, not to judge you. 💙 You can share anything that's on your mind - your feelings, worries, or just chat about your day. This is your safe space, and I'm here to listen. What would you like to talk about?";
 
-const supportiveResponses = [
-  "I hear you, and your feelings are completely valid. 💛",
-  "Thank you for sharing that with me. You're being really brave. 🌟",
-  "It sounds like you're going through something tough. I'm here with you. 🤗",
-  "Your feelings matter, and it's okay to not be okay sometimes. 💙",
-  "You're doing great by talking about this. That takes courage. ✨",
-  "I can sense you're trying your best, and that's what matters. 🌈",
-  "Remember, you don't have to carry everything alone. 💚",
-  "Every small step you take is progress, even when it doesn't feel like it. 🌱",
-  "You're stronger than you know, even in difficult moments. 💪",
-  "It's wonderful that you're taking care of your mental health by sharing. 🌸",
+const friendlyResponses = [
+  "Hey, that sounds really tough. I'm here for you and I want you to know that what you're feeling is totally normal. Want to tell me more about it?",
+  "Wow, thank you for trusting me with that. It takes a lot of courage to share something personal. How are you feeling right now?",
+  "I can really hear the stress in what you're saying. That must be weighing on you a lot. Have you been able to talk to anyone else about this?",
+  "You know what? It's completely okay to feel overwhelmed sometimes. Everyone goes through rough patches. What's been the hardest part for you?",
+  "I'm really glad you felt comfortable sharing that with me. You're not alone in this, okay? What would help you feel a little better right now?",
+  "That sounds like a lot to handle. I'm here to listen, no judgment at all. Sometimes just talking about it can help. How long have you been dealing with this?",
+  "I hear you, and I want you to know that your feelings are valid. It's okay to have bad days. What usually helps you when you're feeling like this?",
+  "Thanks for opening up to me. That must have been hard to say. I'm here to support you through this. What's one small thing that might make today a bit easier?",
+  "I can tell this is really affecting you. You're being so brave by talking about it. Is there anything specific that's been making it worse lately?",
+  "I'm here to listen to whatever you need to share. No pressure at all. Sometimes it just helps to know someone cares, right? What's been on your mind?",
+  "That sounds really challenging. I'm proud of you for reaching out. What's been the most difficult part about all of this?",
+  "I can sense you're going through a lot right now. Want to tell me more about what's been happening? I'm here to listen, not judge.",
 ];
 
 const ChatFriend = () => {
@@ -64,7 +66,7 @@ const ChatFriend = () => {
 
     // Simulate bot response delay
     setTimeout(() => {
-      const randomResponse = supportiveResponses[Math.floor(Math.random() * supportiveResponses.length)];
+      const randomResponse = friendlyResponses[Math.floor(Math.random() * friendlyResponses.length)];
       const botMessage: Message = {
         id: messages.length + 2,
         text: randomResponse,

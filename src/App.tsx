@@ -10,6 +10,8 @@ import ChatFriend from "./pages/ChatFriend";
 import ScratchGame from "./pages/ScratchGame";
 import Journal from "./pages/Journal";
 import Emergency from "./pages/Emergency";
+import RelaxGames from "./pages/RelaxGames";
+import Affirmations from "./pages/Affirmations";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +28,8 @@ const App = () => (
           <Route path="/creative" element={<CreativeSpace />} />
           <Route path="/chat" element={<ChatFriend />} />
           <Route path="/games" element={<ScratchGame />} />
+          <Route path="/relax-games" element={<RelaxGames />} />
+          <Route path="/affirmations" element={<Affirmations />} />
           <Route path="/journal" element={<Journal />} />
           <Route path="/emergency" element={<Emergency />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
