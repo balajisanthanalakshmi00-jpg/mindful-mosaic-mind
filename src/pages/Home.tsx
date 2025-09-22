@@ -92,7 +92,7 @@ const Home = () => {
           </Card>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 xl:grid-cols-6 gap-4 max-w-7xl mx-auto">
           <FeatureCard
             title="Track Your Mood"
             description="Express how you're feeling with emoji-based tracking"
@@ -154,25 +154,26 @@ const FeatureCard = ({ title, description, icon, link, gradient }: {
   gradient: string;
 }) => {
   return (
-    <Card className="calm-card hover:shadow-medium transition-all duration-300 hover:scale-105 group cursor-pointer">
-      <CardContent className="p-6 text-center space-y-4">
-        <div className={`${gradient} w-16 h-16 rounded-full flex items-center justify-center mx-auto text-3xl group-hover:animate-bounce-gentle`}>
+    <Card className="calm-card hover:shadow-medium transition-all duration-300 hover:scale-105 group cursor-pointer h-full">
+      <CardContent className="p-4 text-center space-y-3 h-full flex flex-col">
+        <div className={`${gradient} w-12 h-12 rounded-full flex items-center justify-center mx-auto text-2xl group-hover:animate-bounce-gentle`}>
           {icon}
         </div>
-        <div className="space-y-2">
-          <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors">
+        <div className="space-y-1 flex-grow">
+          <h3 className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
             {title}
           </h3>
-          <p className="text-muted-foreground">
+          <p className="text-xs text-muted-foreground line-clamp-2">
             {description}
           </p>
         </div>
         <Button
           variant="outline"
+          size="sm"
           className="w-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
           onClick={() => window.location.href = link}
         >
-          Explore
+          Go
         </Button>
       </CardContent>
     </Card>

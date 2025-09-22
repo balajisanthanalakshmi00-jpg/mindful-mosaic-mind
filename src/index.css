@@ -18,38 +18,38 @@
     --popover: 210 30% 96%;
     --popover-foreground: 215 25% 25%;
 
-    /* Primary - calming soft blue */
-    --primary: 200 70% 65%;
+    /* Primary - vibrant teal for universal appeal */
+    --primary: 180 65% 55%;
     --primary-foreground: 210 40% 98%;
-    --primary-glow: 200 80% 75%;
+    --primary-glow: 180 75% 65%;
 
-    /* Secondary - mint green for growth */
-    --secondary: 155 60% 70%;
-    --secondary-foreground: 155 40% 15%;
+    /* Secondary - bright coral for energy */
+    --secondary: 15 85% 65%;
+    --secondary-foreground: 15 40% 15%;
 
-    /* Muted tones - beige/warm grays */
-    --muted: 25 15% 92%;
-    --muted-foreground: 25 8% 45%;
+    /* Muted tones - neutral warm grays */
+    --muted: 35 20% 90%;
+    --muted-foreground: 35 15% 40%;
 
-    /* Accent - soft lavender for creativity */
-    --accent: 270 40% 75%;
-    --accent-foreground: 270 30% 15%;
+    /* Accent - vibrant purple for creativity */
+    --accent: 280 65% 65%;
+    --accent-foreground: 280 30% 15%;
 
-    /* Emotional colors */
-    --happy: 45 85% 70%;
-    --calm: 200 60% 80%;
-    --creative: 270 50% 80%;
-    --energetic: 30 80% 75%;
-    --grateful: 155 50% 75%;
+    /* Emotional colors - bright and appealing */
+    --happy: 50 95% 65%;
+    --calm: 195 70% 70%;
+    --creative: 280 70% 70%;
+    --energetic: 25 90% 65%;
+    --grateful: 140 70% 60%;
 
-    /* Reward system - golden tones */
-    --reward: 45 90% 65%;
+    /* Reward system - bright gold */
+    --reward: 45 100% 60%;
     --reward-foreground: 45 50% 15%;
-    --coin-gold: 45 95% 55%;
-    --coin-shine: 50 100% 80%;
+    --coin-gold: 45 100% 50%;
+    --coin-shine: 55 100% 75%;
 
-    /* Support tones - warm and safe */
-    --support: 340 30% 80%;
+    /* Support tones - warm pink for comfort */
+    --support: 340 60% 70%;
     --support-foreground: 340 40% 20%;
 
     /* Emergency - clear but not alarming */
@@ -65,12 +65,12 @@
     --input: 210 25% 94%;
     --ring: 200 70% 65%;
 
-    /* Gradients for visual appeal */
-    --gradient-primary: linear-gradient(135deg, hsl(200 70% 65%), hsl(200 80% 75%));
-    --gradient-secondary: linear-gradient(135deg, hsl(155 60% 70%), hsl(155 70% 80%));
-    --gradient-accent: linear-gradient(135deg, hsl(270 40% 75%), hsl(270 50% 85%));
-    --gradient-reward: linear-gradient(135deg, hsl(45 90% 65%), hsl(50 95% 75%));
-    --gradient-warm: linear-gradient(180deg, hsl(25 20% 96%), hsl(25 15% 92%));
+    /* Gradients for visual appeal - more vibrant */
+    --gradient-primary: linear-gradient(135deg, hsl(180 65% 55%), hsl(180 75% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(15 85% 65%), hsl(25 90% 70%));
+    --gradient-accent: linear-gradient(135deg, hsl(280 65% 65%), hsl(290 70% 75%));
+    --gradient-reward: linear-gradient(135deg, hsl(45 100% 60%), hsl(55 100% 70%));
+    --gradient-warm: linear-gradient(180deg, hsl(35 30% 95%), hsl(35 20% 90%));
 
     /* Shadows for depth */
     --shadow-soft: 0 2px 20px -5px hsl(200 40% 70% / 0.15);
